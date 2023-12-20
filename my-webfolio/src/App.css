@@ -97,3 +97,465 @@ nav ul li {
 
   background-color: rgb(214, 114, 114);
 }
+
+main {
+  background-color: black;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+
+  height: auto;
+
+}
+
+section {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  background-color: darkgreen;
+}
+
+/* about-me and portrait section */
+#about-me {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  
+  width: 90%;
+  background-color: aliceblue;
+}
+
+.bio {
+  height: 80%;
+  width: 40%;
+  padding: 20px;
+  background-color: brown;
+  order: 1;
+}
+
+.bio h2 {
+  background-color: grey;
+  font-size: 35px;
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+}
+
+.bio-text {
+  padding-top: 6px;
+  padding-left: 6px;
+  font-size: 21px;
+}
+
+.portrait {
+  width: 50%;
+  padding: 20px;
+  margin: 5px;
+  background-color: black;
+  order: 0;
+}
+section h2 {
+  font-size: 35px;
+  padding: 10px;
+  margin: 5px;
+  background-color: grey;
+}
+
+
+/* about section END */
+
+/* work-1 section start */
+.card-1 {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  height: 600px;
+  width: 75%;
+  padding: 15px;
+  margin: 5px;
+  background-color: black;
+}
+
+.card-1 h3 {
+  color: blanchedalmond;
+  background-color: brown;
+  font-size: 50px;
+  
+}
+
+#western-shootout-img {
+  width: 85%;
+  height: 85%;
+}
+/* work-1 section end */
+
+/* card article start */
+.card-article {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+
+  width: 75%;
+  padding: 10px;
+  margin: 5px;
+  background-color: goldenrod;
+}
+
+.card-article figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  background-color: aquamarine;
+  width: 25%;
+  margin: 2px;
+}
+
+.card-article figure h3 {
+  background-color: violet;
+  text-align: center;
+  font-size: 25px;
+  height: 50px;
+  width: 95%;
+  padding: 3px;
+  margin: 2px;
+  
+}
+
+.card-article-img {
+  display: flex;
+
+  background-color: whitesmoke;
+  height: 250px;
+  width: 95%; 
+  padding: 5px;
+  margin: 2px;
+  
+}
+/* card-article end */
+
+footer {
+  background-color: black;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row;
+}
+
+footer h4 {
+  background-color: aqua;
+  padding: 10px;
+  margin: 5px;
+  font-size: 25px;
+  text-align: center;
+  
+}
+
+footer ul {
+  background-color: grey;
+  margin: 5px;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+footer ul li {
+  background-color: rgb(214, 114, 114);
+  padding: 10px;
+  margin: 3px;
+  text-align: center;
+  
+}
+
+
+@media screen and (max-width: 1080px) {
+  .bio h2 {
+      height: 50px;
+  }
+
+  .bio-text {
+      font-size: 20px;
+  }
+  .portrait {
+      height: 350px;
+  }
+  .card-article-img {
+      height: 190px;
+      
+  }
+
+  .card-article figure h3 {
+      font-size: 23px;
+  }
+
+  footer ul {
+      width: 65%;
+  }
+
+  footer ul li {
+      padding: 5px;
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+  .portrait {
+      height: 375px;
+  }
+
+  .bio-text {
+      font-size: 19px;
+  }
+  .card-1 {
+      height: 500px;
+      width: 85%;
+  }
+  .card-1 h3 {
+      font-size: 35px;
+  }
+
+  #western-shootout-img {
+      height: 90%;
+      width: 90%;
+  }
+
+  .card-article {
+      height: 300px;
+      width: 85%;
+  }
+
+  .card-article-img {
+      height: 225px;
+  }
+
+  .card-article figure h3 {
+      font-size: 19px;
+      height: 15%;
+  }
+
+  footer h4 {
+      height: 60px;
+      font-size: 24px;
+      padding-top: 16px;
+  }
+  
+  footer ul {
+      width: 60%;
+      height: 90%;
+      
+  }
+  
+  footer ul li {
+      height: 95%;
+      font-size: px;
+      
+  }
+}
+
+/* Large smartphones */
+@media screen and (max-width: 768px) {
+  nav {
+      height: 80px;
+  }
+  nav ul li {
+      padding: 1px;
+      width: 100px;
+  }
+  #about-me {
+      width: 100%;
+      justify-content: space-around;
+  }
+
+  .bio {
+      height: 450px;
+      justify-content: space-evenly;
+  }
+
+  .bio h2 {
+      font-size: 28px;
+      padding: 2px;
+      padding-top: 10px;
+  }
+
+  .bio-text {
+      font-size: 20px;
+      padding: 1px;
+      margin-top: 30px;
+  }
+
+  .portrait {
+      width: 450px;
+      height: 450px;
+  }
+
+  .card-1 {
+      height: 500px;
+      width: 94%;
+  }
+
+  .card-1 h3 {
+      font-size: 35px;
+  }
+
+  .card-article {
+      width: 90%;
+  }
+
+  .card-article figure {
+      padding: 0px;
+      margin: 0px;
+      width: 200px;
+  }
+
+  .card-article figure h3 {
+      font-size: 22px;
+      height: 50px;
+  }
+
+  .card-article-img {
+      padding: 0px;
+      width: 170px;
+  }
+  
+  #western-shootout-img {
+      height: 90%;
+      width: 100%;
+  }
+
+  #little-hero-title {
+      padding-top: 10px;
+  }
+
+  footer h4 {
+      height: 60px;
+      font-size: 24px;
+      padding-top: 16px;
+  }
+  
+  footer ul {
+      width: 75%;
+      
+  }
+  
+  footer ul li {
+      padding: 2px;
+      font-size: 18px;
+      
+  }
+}
+
+/* Small smartphones */
+@media screen and (max-width: 576px) {
+  nav {
+      height: 175px;
+  }
+
+  nav ul {
+      justify-content: center;
+  }
+
+  nav ul li {
+      width: 20%;
+      height: 50%;
+      font-size: 23px;
+  }
+
+  #about-me {
+      width: 100%;
+      flex-direction: column;
+  }
+
+  .bio {
+      width: 97%;
+      height : 40%;
+  }
+
+  .bio h2 {
+      font-size: 35px;
+      padding: 2px;
+      padding-top: 10px;
+  }
+
+  .bio-text {
+      font-size: 30px;
+      padding: 1px;
+      margin-top: 40px;
+  }
+
+  .portrait {
+      width: 95%;
+      height: 450px;
+  }
+
+  .card-1 {
+      height: 500px;
+      width: 94%;
+  }
+
+  .card-1 h3 {
+      font-size: 35px;
+  }
+
+  .card-article {
+      height: auto;
+      width: 100%;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+  }
+
+  .card-article figure {
+      padding: 5px;
+      margin: 2px;
+      width: 95%;
+      justify-content: space-around;
+      align-items: center;
+  }
+
+  .card-article figure h3 {
+      font-size: 30px;
+      height: 50px;
+  }
+
+  .card-article-img {
+      padding: 0px;
+      width: 95%;
+      height: 300px;
+  }
+  
+  #western-shootout-img {
+      height: 90%;
+      width: 100%;
+  }
+
+  #little-hero-title {
+      padding-top: 10px;
+  }
+
+  footer h4 {
+      height: 60px;
+      font-size: 24px;
+      padding-top: 16px;
+  }
+  
+  footer ul {
+      width: 75%;
+  
+  }
+  
+  footer ul li {
+      font-size: 25px;
+      
+  }
+}
