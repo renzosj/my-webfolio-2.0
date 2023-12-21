@@ -1,18 +1,24 @@
 import React from 'react';
-import portrait from '../assets/images/portrait.jpg'
-
+import { Container, Col, Card, Image } from 'react-bootstrap';
+import portraitImage from '../assets/images/portrait.jpg';
 
 export default function Bio() {
     return (
-        <section id="about-me">
-            <div className="bio">
-                <h2>About Me</h2>
-                <p className="bio-text">
-                    Hi, I'm Renzo San Juan. I am currently a student at Berkeley Extensions Bootcamp for Web Development. My passions are in story-telling and video games.
-                    I currently reside in Southern California. My favorite food is sushi and anything with cheese. I am currently watching The Sopranos. Ask me anything!
-                </p>
-            </div>
-            <img className="portrait" src={portrait} alt="Renzo San Juan"/>
-        </section>
+        <Container id="about-me" className="my-5 d-flex justify-content-center">
+            <Col xs={12} sm={8} md={6} lg={4} className="d-flex align-items-center">
+                <Card className="text-center" style={{ maxWidth: '400px' }}>
+                    <Card.Header as="h2">About Me</Card.Header>
+                    <Card.Body>
+                        <Image src={portraitImage} roundedCircle fluid className="portrait-max-size img-fluid mb-3 mx-auto d-block" style={{ maxWidth: '200px', height: 'auto' }} />
+                        <Card.Text>
+                            I am a Full Stack Developer based in Wildomar, California.
+                            I am proficient with MERN stack applications and readable code bases.
+                            My passions are in storytelling and video games. My favorite food is sushi and anything with cheese.
+                            I am currently watching Yu Yu Hakusho. Ask me anything!
+                        </Card.Text>
+                    </Card.Body>
+                </Card>
+            </Col>
+        </Container>
     );
 }
