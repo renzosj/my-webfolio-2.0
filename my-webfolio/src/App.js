@@ -30,11 +30,11 @@ function App() {
     <div>
       <Header />
       <Navbar />
-      <main>
+      {/* <main>
         <Bio />
         <Works />
       </main>
-      <Footer />
+      <Footer /> */}
     </div>
 
 
