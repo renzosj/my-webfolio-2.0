@@ -30,10 +30,13 @@ function App() {
     <div>
       <Header />
       <Navbar />
-      <Bio />
-      <Works />
+      <main>
+        <Bio />
+        <Works />
+      </main>
       <Footer />
     </div>
+
 
   );
 }
