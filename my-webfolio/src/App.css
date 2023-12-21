@@ -1,50 +1,7 @@
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
-/* body {
-  background-color: #d7ceb2;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  min-width: 800px;
-
-} */
-
-.soft-grey-bg {
+header {
+  /*display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;*/
   background-color: #4c5760;
 }
 
@@ -86,7 +43,9 @@ nav ul li {
   background-color: rgb(214, 114, 114);
 }
 
-main {
+
+
+/* main {
   background-color: black;
   display: flex;
   flex-flow: column wrap;
@@ -97,7 +56,7 @@ main {
 
 } */
 
-section {
+/* section {
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -105,9 +64,17 @@ section {
 
   width: 100%;
   background-color: darkgreen;
+} */
+
+/* Custom styling for the portrait image */
+.portrait-max-size {
+  max-width: 200px; /* Adjust this value as needed */
+  height: auto;
+  margin: 0 auto; /* This centers the image in its container */
 }
 
-/* about-me and portrait section */
+
+/* about-me and portrait section
 #about-me {
   display: flex;
   flex-flow: row;
@@ -146,13 +113,15 @@ section {
   margin: 5px;
   background-color: black;
   order: 0;
-}
-section h2 {
+} */
+/* section h2 {
   font-size: 35px;
   padding: 10px;
   margin: 5px;
   background-color: grey;
-}
+} */
+
+
 /* about section END */
 
 /* work-1 section start */
