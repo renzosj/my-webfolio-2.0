@@ -4,9 +4,9 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 export default function Footer() {
     return (
-        <footer className="bg-light text-center py-4">
+        <footer className="text-center py-1 soft-brown-bg">
             <Container>
-                <Row className="justify-content-center mb-3">
+                <Row className="justify-content-center mt-3 mb-1">
                     <Col xs="auto">
                         <a href="https://www.linkedin.com/in/renzo-san-juan/" target="_blank" rel="noopener noreferrer">
                             <FaLinkedin size={30} />
@@ -25,7 +25,7 @@ export default function Footer() {
                 </Row>
                 <Row>
                     <Col>
-                        <p>Made in React with ☕ and 💖</p>
+                        <p className='h4'>Made in React with ☕ and 💖</p>
                     </Col>
                 </Row>
             </Container>

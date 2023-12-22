@@ -18,10 +18,10 @@ export default function NavigationBar({ setActiveProject}) {
     };
 
     return (
-        <Navbar bg="light" expand="lg" expanded={expanded}>
-            <Container>
-                <Navbar.Brand href="#home">Look upon my works, ye mighty</Navbar.Brand>
-                <Navbar.Toggle onClick={toggleNavbar} aria-controls="basic-navbar-nav" />
+        <Navbar expand="lg" expanded={expanded} className='soft-blue-bg'>
+            <Container className='soft-blue-bg'>
+                <Navbar.Brand href="#home" className='font-weight-bold'>Look upon my works, ye mighty</Navbar.Brand>
+                <Navbar.Toggle className="soft--bg" onClick={toggleNavbar} aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         {/* <Nav.Link href="#about-me" onClick={() => handleNavLinkClick(null)}>About Me</Nav.Link> */}

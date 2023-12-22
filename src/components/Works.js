@@ -28,7 +28,7 @@ const projects = [
 export default function Works({ activeProject }) {
 
   const renderProject = project => (
-    <Card className="mb-3">
+    <Card className="m-2 soft-blue-bg">
       <Card.Img variant="top" src={project.image} />
       <Card.Body>
         <Card.Title>{project.name}</Card.Title>
@@ -39,10 +39,10 @@ export default function Works({ activeProject }) {
   );
 
   return (
-    <Container className="my-5">
+    <Container className="soft-grey-bg">
       <Row className="justify-content-center">
         <Col xs={12}>
-          {activeProject !== null ? renderProject(projects[activeProject]) : <p>Select a project in navigation menu to view details.</p>}
+          {activeProject !== null ? renderProject(projects[activeProject]) : <p className='lead light-brown text-center fs-5'>Select a project in navigation menu</p>}
         </Col>
       </Row>
     </Container>

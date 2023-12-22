@@ -1,0 +1,44 @@
+.soft-grey-bg {
+  background-color: #4c5760 !important;
+}
+
+.soft-brown {
+  color: #D7CEB2 !important;
+}
+
+.soft-brown-bg {
+  background-color: #D7CEB2 !important;
+}
+
+.soft-blue-bg, main{
+  background-color: #93A8AC !important;
+}
+
+.light-brown-bg {
+  background-color: #A59E8C !important;
+}
+
+.dark-brown-bg {
+  background-color: #66635B !important;
+}
+
+.dark-brown {
+  color: #66635B !important;
+}
+
+.light-brown {
+  color: #A59E8C !important;
+}
+
+.soft-brown-bg .navbar-light,
+.soft-brown-bg .navbar-light .navbar-brand,
+.soft-brown-bg .navbar-light .nav-link {
+    color: #D7CEB2;
+}
+
+.portrait-max-size {
+  max-width: 200px; 
+  height: auto;
+  margin: 0 auto; 
+}
+
