@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 
-export default function NavigationBar() {
+export default function NavigationBar({ setActiveProject }) {
     const [expanded, setExpanded] = useState(false);
 
     const toggleNavbar = () => {
@@ -12,6 +12,11 @@ export default function NavigationBar() {
         setExpanded(false);
     };
 
+    const handleNavLinkClick = (projectIndex) => {
+        setActiveProject(projectIndex);
+        collapseNavbar();
+    };
+
     return (
         <Navbar bg="light" expand="lg" expanded={expanded}>
             <Container>
@@ -19,12 +24,12 @@ export default function NavigationBar() {
                 <Navbar.Toggle onClick={toggleNavbar} aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="#about-me" onClick={collapseNavbar}>About Me</Nav.Link>
-                        <Nav.Link href="#work-1" onClick={collapseNavbar}>Movie Database</Nav.Link>
-                        <Nav.Link href="#work-2" onClick={collapseNavbar}>Goodnight, King</Nav.Link>
-                        <Nav.Link href="#work-3" onClick={collapseNavbar}>Mango Tax</Nav.Link>
+                        <Nav.Link href="#about-me" onClick={() => handleNavLinkClick(null)}>About Me</Nav.Link>
+                        <Nav.Link href="#movie-database" onClick={() => handleNavLinkClick(0)}>Movie Database</Nav.Link>
+                        <Nav.Link href="#gnk" onClick={() => handleNavLinkClick(1)}>Goodnight, King</Nav.Link>
+                        <Nav.Link href="#mango-tax" onClick={() => handleNavLinkClick(2)}>Mango Tax</Nav.Link>
                         {/* refactor links later to use loop (map function) */}
-                        <Nav.Link href="#contact" onClick={collapseNavbar}>Contact</Nav.Link>
+                        <Nav.Link href="#contact" onClick={() => handleNavLinkClick(null)}>Contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
