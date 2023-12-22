@@ -1,15 +1,34 @@
 import React from 'react';
+import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
+import { Container, Row, Col } from 'react-bootstrap';
 
 export default function Footer() {
     return (
-        <footer>
-            <h4 id="contact">Contact Me</h4>
-            <ul>
-                <li> <a href="https://github.com/renzosj">My Github Profile</a></li>
-                <li>G-mail: <a href="mailto:rcsanjuan96@gmail.com">rcsanjuan96@gmail.com</a></li>
-                <li> <a href="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/61d19RCFk2L._AC_UF1000,1000_QL80_.jpg">My Club Penguin</a></li>
-                <li> <a href="https://myanimelist.net/profile/tapsyxp">My Anime List</a></li>
-            </ul>
+        <footer className="bg-light text-center py-4">
+            <Container>
+                <Row className="justify-content-center mb-3">
+                    <Col xs="auto">
+                        <a href="https://www.linkedin.com/in/renzo-san-juan/" target="_blank" rel="noopener noreferrer">
+                            <FaLinkedin size={30} />
+                        </a>
+                    </Col>
+                    <Col xs="auto">
+                        <a href="https://github.com/renzosj" target="_blank" rel="noopener noreferrer">
+                            <FaGithub size={30} />
+                        </a>
+                    </Col>
+                    <Col xs="auto">
+                        <a href="mailto:renzosanjuan@proton.me">
+                            <FaEnvelope size={30} />
+                        </a>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <p>Made in React with ☕ and 💖</p>
+                    </Col>
+                </Row>
+            </Container>
         </footer>
     );
 }

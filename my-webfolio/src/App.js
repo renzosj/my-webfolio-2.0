@@ -23,6 +23,7 @@ function App() {
         <Works activeProject={activeProject} />
         <Contact />
       </main>
+      <Footer />
     </div>
   );
 }
