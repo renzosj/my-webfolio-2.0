@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Navbar from './components/Navbar';
 import Bio from './components/Bio';
 import Works from './components/Works';
+import Contact from './components/Contact'
 import Footer from './components/Footer';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <main>
         <Bio />
         <Works activeProject={activeProject} />
+        <Contact />
       </main>
     </div>
   );
