@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 
-export default function NavigationBar({ setActiveProject}) {
+export default function NavigationBar({ setActiveProject, setShowContact}) {
     const [expanded, setExpanded] = useState(false);
 
     const toggleNavbar = () => {
@@ -12,8 +12,13 @@ export default function NavigationBar({ setActiveProject}) {
         setExpanded(false);
     };
 
-    const handleNavLinkClick = (projectIndex) => {
+    const handleWorkNavLinkClick = (projectIndex) => {
         setActiveProject(projectIndex);
+        collapseNavbar();
+    };
+
+    const handleContactNavLinkClick = () => {
+        setShowContact(currentState => !currentState);
         collapseNavbar();
     };
 
@@ -24,12 +29,12 @@ export default function NavigationBar({ setActiveProject}) {
                 <Navbar.Toggle className="soft--bg" onClick={toggleNavbar} aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        {/* <Nav.Link href="#about-me" onClick={() => handleNavLinkClick(null)}>About Me</Nav.Link> */}
-                        <Nav.Link href="#movie-db" onClick={() => handleNavLinkClick(0)}>Movie Database</Nav.Link>
-                        <Nav.Link href="#gnk" onClick={() => handleNavLinkClick(1)}>Goodnight, King</Nav.Link>
-                        <Nav.Link href="#mango-tax" onClick={() => handleNavLinkClick(2)}>Mango Tax</Nav.Link>
+                        {/* <Nav.Link href="#about-me" onClick={() => handleWorkNavLinkClick(null)}>About Me</Nav.Link> */}
+                        <Nav.Link href="#movie-database" onClick={() => handleWorkNavLinkClick(0)}>Movie Database</Nav.Link>
+                        <Nav.Link href="#gnk" onClick={() => handleWorkNavLinkClick(1)}>Goodnight, King</Nav.Link>
+                        <Nav.Link href="#mango-tax" onClick={() => handleWorkNavLinkClick(2)}>Mango Tax</Nav.Link>
                         {/* refactor links later to use loop (map function) */}
-                        <Nav.Link href="#contact" onClick={collapseNavbar}>Contact</Nav.Link>
+                        <Nav.Link href="#contact" onClick={() => handleContactNavLinkClick()}>Contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

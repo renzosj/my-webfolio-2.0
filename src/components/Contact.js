@@ -1,8 +1,10 @@
 import React from 'react';
 import { Container, Form, Button, Row, Col } from 'react-bootstrap';
 
-export default function Contact() {
-  return (
+export default function Contact({ showContact }) {
+  // const showContactIsTrue = showContact;
+
+  const renderContactForm = () => (
     <Container id="contact" className="p-1 soft-blue-bg">
       <Row className="justify-content-center">
         <Col xs={12} md={8} lg={6}>
@@ -35,5 +37,12 @@ export default function Contact() {
         </Col>
       </Row>
     </Container>
+  );
+
+  return (
+    <div>
+      {showContact ? renderContactForm() : <br id="contact" />}
+    </div>
+
   );
 }
