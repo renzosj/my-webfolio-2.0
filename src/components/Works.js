@@ -9,26 +9,29 @@ const projects = [
     name: 'Movie Database',
     image: movieDatabaseImg,
     deployedLink: 'https://christinahoang32.github.io/debug-thugs/',
-    githubLink: 'https://github.com/christinahoang32/debug-thugs'
+    githubLink: 'https://github.com/christinahoang32/debug-thugs',
+    href: 'movie-db'
   },
   {
     name: 'Goodnight King',
     image: gnkImg,
     deployedLink: 'https://fathomless-taiga-84501-b7e9635047d5.herokuapp.com/',
-    githubLink: 'https://github.com/renzosj/goodnight-king'
+    githubLink: 'https://github.com/renzosj/goodnight-king',
+    href: 'gnk'
   },
   {
     name: 'Mango Tax',
     image: mangoTaxImg,
     deployedLink: 'https://mango.tax/',
-    githubLink: '' //it's private
+    githubLink: '', //it's private
+    href: 'mango-tax'
   }
 ];
 
 export default function Works({ activeProject }) {
 
   const renderProject = project => (
-    <Card className="m-2 soft-blue-bg">
+    <Card id={project.href} className="m-2 soft-blue-bg">
       <Card.Img variant="top" src={project.image} />
       <Card.Body>
         <Card.Title>{project.name}</Card.Title>

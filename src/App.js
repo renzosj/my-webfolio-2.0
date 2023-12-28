@@ -8,7 +8,7 @@ import Contact from './components/Contact'
 import Footer from './components/Footer';
 
 function App() {
-  const [activeProject, setActiveProject] = useState(null);
+  const [activeProject, setActiveProject] = useState(0);
 
   const [showContact, setShowContact] = useState(false);
   const handleSetShowContact = (showContactStateBool) => {
