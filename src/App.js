@@ -10,6 +10,11 @@ import Footer from './components/Footer';
 function App() {
   const [activeProject, setActiveProject] = useState(null);
 
+  const [showContact, setShowContact] = useState(false);
+  const handleSetShowContact = (showContactStateBool) => {
+    setShowContact(showContactStateBool);
+  }
+
   const handleSetActiveProject = (projectIndex) => {
     setActiveProject(projectIndex);
   }
@@ -17,11 +22,11 @@ function App() {
   return (
     <div>
       <Header />
-      <Navbar setActiveProject={handleSetActiveProject} />
+      <Navbar setActiveProject={handleSetActiveProject} setShowContact={handleSetShowContact} />
       <main>
         <Bio />
         <Works activeProject={activeProject} />
-        <Contact />
+        <Contact showContact={showContact} />
       </main>
       <Footer />
     </div>
