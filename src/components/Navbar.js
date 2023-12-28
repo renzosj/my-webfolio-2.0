@@ -30,7 +30,7 @@ export default function NavigationBar({ setActiveProject, setShowContact}) {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         {/* <Nav.Link href="#about-me" onClick={() => handleWorkNavLinkClick(null)}>About Me</Nav.Link> */}
-                        <Nav.Link href="#movie-database" onClick={() => handleWorkNavLinkClick(0)}>Movie Database</Nav.Link>
+                        <Nav.Link href="#movie-db" onClick={() => handleWorkNavLinkClick(0)}>Movie Database</Nav.Link>
                         <Nav.Link href="#gnk" onClick={() => handleWorkNavLinkClick(1)}>Goodnight, King</Nav.Link>
                         <Nav.Link href="#mango-tax" onClick={() => handleWorkNavLinkClick(2)}>Mango Tax</Nav.Link>
                         {/* refactor links later to use loop (map function) */}
