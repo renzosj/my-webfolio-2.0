@@ -23,7 +23,7 @@ n/a
 <a name="use"></a>
 ## Usage
 
-Click here for deployed link: 
+Click here for deployed link: https://renzosj.github.io/my-webfolio-2.0/
 
 <a name="license"></a>
 ## License
